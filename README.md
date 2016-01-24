@@ -3,7 +3,7 @@ Requirements
 
 - GDAL
 
-    sudo apt-get install gdal libgdal-dev
+    sudo apt-get install gdal-bin libgdal-dev
 
 - Python GDAL support
 
