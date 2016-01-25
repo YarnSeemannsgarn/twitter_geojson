@@ -37,7 +37,7 @@ def pointInPolygon(x, y, poly):
 Reads specified shapefile and returns polygons.
 Polygon format: [(x1, y1), (x2, y2), ...] 
 """
-def readShapfile(filePath):
+def readShapefile(filePath):
     driver = ogr.GetDriverByName("ESRI Shapefile")
     datasource = driver.Open(filePath, 0)
     layer = datasource.GetLayer()
@@ -112,7 +112,7 @@ MAIN METHOD - PROGRAMM STARTING POINT
 """
 def main():
     # Read shapefile
-    polygons = readShapfile("communities_tirol_map/Export_Output_2.shp")
+    polygons = readShapefile("communities_tirol_map/Export_Output_2.shp")
 
     # Read geojson
     with open("boundingbox1.geojson") as f:
